@@ -49,6 +49,13 @@ COMMENTS
   * Se crean RUTAS_ANIDADAS con products y comments
 - Muestra la cantidad de comentarios por producto y agrega estilos a products.scss
 
+VOTES
+- Se crea Model con product:references y user:references
+- Se crea el Controller
+- Se crean las RUTAS ANIDADAS
+- Se crean los links en index.html.erb de products y su ESTILO en producs.scss
+- Se crea metodo voted_by? en VOTE_MODEL
+- En SHOW de products muestra el GRAVATAR de quienes votaron
 
 
 # README
