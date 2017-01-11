@@ -17,7 +17,10 @@ Rails.application.routes.draw do
   # patch '/products/:id', to: 'products#update'
   # delete '/products/:id', to: 'products#destroy'
 
-  resources :products
+  resources :products do
+    resources :comments, only: [:create]
+  end
+
 
 
 

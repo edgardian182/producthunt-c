@@ -41,6 +41,14 @@ GIT
 - El nombre de un commit se cambia con: git commit --amend
 
 
+COMMENTS
+- Generar Modelo y foreing-keys
+- Muestra el Gravatar del usuario que hizo comment en show.html.erb de products y el FORMULARIO para crearle
+- Crear controlador para comments
+  * Se hace un MERGE para asociar un usuario al comentario
+  * Se crean RUTAS_ANIDADAS con products y comments
+- Muestra la cantidad de comentarios por producto y agrega estilos a products.scss
+
 
 
 # README
