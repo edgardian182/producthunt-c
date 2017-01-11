@@ -5,6 +5,12 @@ DEVELOPED APP FEATURES
 - NavBar with GRAVATAR and the gem 'gravatar-ultimate'
 - SESSIONS
 - helper_method :signed_in? in application_controller.rb to allow the method to be ejecuted in the views
+- Apply different SCSS styles
+
+GEMS
+
+- ANNOTATE => Show the fields of a table in the Model
+- GRAVATAR-ULTIMATE => Use the gravatar service to show some user information
 
 
 
