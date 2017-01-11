@@ -12,6 +12,8 @@
 #
 
 class User < ApplicationRecord
+  has_many :products
+
   has_secure_password validations: false
 
   validates :email, uniqueness: true, format: /@/   #Que tenga un @

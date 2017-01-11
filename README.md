@@ -16,11 +16,30 @@ APP LANGUAGE
   * Create es.yml in /locales   => Crea los mensajes respectivos en ESPAÑOL
    => Siempre traducir los nombres de los campos
 
-GEMS
+ASSOCIATIONS
+  $ rails g migration add_user_to_products user:references   => Adds foreing-key
+  $ rake db:migrate
+  $ annotate
 
+  => Asociar al guardar un producto con el usuario en product_controller.rb
+
+OPTIONS WITH GLYPHICONS
+  - Revisar en show.html.erb de products
+    => Se usa html_safe cuando queremos que se interprete como codigo HTML y no como String
+    => SCSS styles
+  - Restringir solo a productos propios
+
+GEMS
 - 'annotate' => Show the fields of a table in the Model (use annotate in console)
 - 'gravatar-ultimate' => Use the gravatar service to show some user information
 - 'rails-i18n' => Para la traducción de la APP
+
+GIT
+- Crear rama para cada nueva caracteristica
+- Enviar a GitHub y hacer pull request
+- Cambiar a MASTER y hacer git pull
+- El nombre de un commit se cambia con: git commit --amend
+
 
 
 
