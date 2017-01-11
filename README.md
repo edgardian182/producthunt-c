@@ -33,6 +33,7 @@ GEMS
 - 'annotate' => Show the fields of a table in the Model (use annotate in console)
 - 'gravatar-ultimate' => Use the gravatar service to show some user information
 - 'rails-i18n' => Para la traducción de la APP
+- 'paperclip'  => Subir archivos e imagenes
 
 GIT
 - Crear rama para cada nueva caracteristica
@@ -56,6 +57,23 @@ VOTES
 - Se crean los links en index.html.erb de products y su ESTILO en producs.scss
 - Se crea metodo voted_by? en VOTE_MODEL
 - En SHOW de products muestra el GRAVATAR de quienes votaron
+
+
+IMAGES AND FILES
+- Se usa gem 'paperclip'
+- rails g paperclip product image   => Que Model guarda el archivo y nombre del campo
+  => Crea la MIGRACION
+  => rake db:migrate    => Crea 4 campos
+  => En Model Product agragamos el Attachment
+  => Se hace validacion al Attachment para que se suban solo imagenes
+  => Modificamos FORMULARIO para agregar imagen (<%= f.file_field :image %>)
+  => Permitir parametro en el controlador
+  => Mostrar la imagen si existe en index.html.erb (<%= image_tag product.image.url(:thumb) %>)
+  => Se agregan ESTILOS
+  => Se crea HELPER_METHOD header_style que agrega codigo HTML para mostrar IMG
+  => URL para imagenes   https://www.pexels.com
+  => Se evita subir las imagenes a github usando gitignore /public/system
+
 
 
 # README
