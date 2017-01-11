@@ -5,6 +5,22 @@ DEVELOPED APP FEATURES
 - NavBar with GRAVATAR and the gem 'gravatar-ultimate'
 - SESSIONS
 - helper_method :signed_in? in application_controller.rb to allow the method to be ejecuted in the views
+- Apply different SCSS styles
+- Show errors (_form.html.erb)
+- VALIDACIONES
+
+APP LANGUAGE
+  * In config/application.rb
+    config.i18n.default_locale = :es
+    config.i18n.enforce_available_locales = true
+  * Create es.yml in /locales   => Crea los mensajes respectivos en ESPAÑOL
+   => Siempre traducir los nombres de los campos
+
+GEMS
+
+- 'annotate' => Show the fields of a table in the Model (use annotate in console)
+- 'gravatar-ultimate' => Use the gravatar service to show some user information
+- 'rails-i18n' => Para la traducción de la APP
 
 
 
