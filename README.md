@@ -16,6 +16,11 @@ APP LANGUAGE
   * Create es.yml in /locales   => Crea los mensajes respectivos en ESPAÑOL
    => Siempre traducir los nombres de los campos
 
+ASSOCIATIONS
+  $ rails g migration add_user_to_products user:references   => Adds foreing-key
+  $ rake db:migrate
+  $ annotate
+
 GEMS
 
 - 'annotate' => Show the fields of a table in the Model (use annotate in console)
