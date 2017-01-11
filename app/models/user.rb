@@ -13,4 +13,9 @@
 
 class User < ApplicationRecord
   has_secure_password validations: false
+
+  validates :email, uniqueness: true, format: /@/   #Que tenga un @
+  validates :password, presence: true, on: :create  #Que exista al crearse
+  validates :password, length: { in: 6..20 }, allow_nil: true  #Que contraseña sea entre 6-20 caracteres y al editar puede estar nulo
+  validates :name, presence: true
 end

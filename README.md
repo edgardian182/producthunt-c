@@ -7,6 +7,7 @@ DEVELOPED APP FEATURES
 - helper_method :signed_in? in application_controller.rb to allow the method to be ejecuted in the views
 - Apply different SCSS styles
 - Show errors (_form.html.erb)
+- VALIDACIONES
 
 GEMS
 
