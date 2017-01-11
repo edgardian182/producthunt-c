@@ -27,6 +27,7 @@ OPTIONS WITH GLYPHICONS
   - Revisar en show.html.erb de products
     => Se usa html_safe cuando queremos que se interprete como codigo HTML y no como String
     => SCSS styles
+  - Restringir solo a productos propios
 
 GEMS
 
