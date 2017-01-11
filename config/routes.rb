@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   # delete '/products/:id', to: 'products#destroy'
 
   resources :products do
+    # Como solo se tendrá un voto relacionado a cada producto por cada usuario no hace falta crear URLs que indiquen el :id del voto y por eso se usa RESOURCE y VOTE
+    resource :vote, only: [:create, :destroy]
     resources :comments, only: [:create]
   end
 

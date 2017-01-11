@@ -14,7 +14,13 @@
 class Product < ActiveRecord::Base
   belongs_to :user
   has_many :comments
+  has_many :votes
 
   validates_presence_of :name, :url
+
+  def voted_by?(user)
+    # Comprueba si existe un usuario asociado al voto
+    votes.exists?(user: user)
+  end
 
 end
