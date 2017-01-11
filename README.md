@@ -74,6 +74,13 @@ IMAGES AND FILES
   => URL para imagenes   https://www.pexels.com
   => Se evita subir las imagenes a github usando gitignore /public/system
 
+AWS PARA IMAGENES
+- Se usa el servicio S3 de aws.amazon.com
+- Se crea un BUCKET => Carpeta para almacenar los archivos
+- Se conecta con nuestra APP para que suba los archivos automaticamente
+  => https://devcenter.heroku.com/articles/paperclip-s3
+    => Seguir la CONFIGURACION
+
 
 
 # README
