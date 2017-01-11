@@ -21,6 +21,13 @@ ASSOCIATIONS
   $ rake db:migrate
   $ annotate
 
+  => Asociar al guardar un producto con el usuario en product_controller.rb
+
+OPTIONS WITH GLYPHICONS
+  - Revisar en show.html.erb de products
+    => Se usa html_safe cuando queremos que se interprete como codigo HTML y no como String
+    => SCSS styles
+
 GEMS
 
 - 'annotate' => Show the fields of a table in the Model (use annotate in console)
