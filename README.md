@@ -30,10 +30,16 @@ OPTIONS WITH GLYPHICONS
   - Restringir solo a productos propios
 
 GEMS
-
 - 'annotate' => Show the fields of a table in the Model (use annotate in console)
 - 'gravatar-ultimate' => Use the gravatar service to show some user information
 - 'rails-i18n' => Para la traducción de la APP
+
+GIT
+- Crear rama para cada nueva caracteristica
+- Enviar a GitHub y hacer pull request
+- Cambiar a MASTER y hacer git pull
+- El nombre de un commit se cambia con: git commit --amend
+
 
 
 
