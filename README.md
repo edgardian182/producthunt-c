@@ -6,10 +6,11 @@ DEVELOPED APP FEATURES
 - SESSIONS
 - helper_method :signed_in? in application_controller.rb to allow the method to be ejecuted in the views
 - Apply different SCSS styles
+- Show errors (_form.html.erb)
 
 GEMS
 
-- ANNOTATE => Show the fields of a table in the Model
+- ANNOTATE => Show the fields of a table in the Model (use annotate in console)
 - GRAVATAR-ULTIMATE => Use the gravatar service to show some user information
 
 
