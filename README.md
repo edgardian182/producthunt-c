@@ -93,6 +93,9 @@ EMAILS
   => Se define la configuracion de mandrill
 - Agrega gem 'figaro'  => Agrega config/applcation.yml para agregar alli la info sensible (VER)
 - Ahora se crea una tarea en lib/tasks email.rake
+- Se envian las credenciales de MANDRILL a HEROKU
+  => figaro heroku:set -e production
+  => heroku config:set hostname=http://producthunt-c.herokuapp.com
 
 
 
