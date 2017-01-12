@@ -34,6 +34,7 @@ GEMS
 - 'gravatar-ultimate' => Use the gravatar service to show some user information
 - 'rails-i18n' => Para la traducción de la APP
 - 'paperclip'  => Subir archivos e imagenes
+- 'figaro'  => Se usa por seguridad de datos de configuracion
 
 GIT
 - Crear rama para cada nueva caracteristica
@@ -80,6 +81,18 @@ AWS PARA IMAGENES
 - Se conecta con nuestra APP para que suba los archivos automaticamente
   => https://devcenter.heroku.com/articles/paperclip-s3
     => Seguir la CONFIGURACION
+    => No olvidar: heroku config:set AWS_REGION=us-east-1
+
+EMAILS
+- rails g mailer UserMailer   => Genera el mailer y la carpeta en las views
+- En application_mailer.rb cambiar el from por correo personal u otro
+- En user_mailer.rb agregar metodo para envio de email
+- En las vistas user_mailer se debe crear un archivo con el mismo nombre del metodo creado
+- Para enviar los correos se usa un servicio llamado: http://mandrill.com
+- En config/initializers crear carpeta setup_mail.rb
+  => Se define la configuracion de mandrill
+- Agrega gem 'figaro'  => Agrega config/applcation.yml para agregar alli la info sensible (VER)
+- Ahora se crea una tarea en lib/tasks email.rake
 
 
 

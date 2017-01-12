@@ -22,3 +22,5 @@
 
 #Ignore all the images in public
 /public/system
+# Ignore application configuration
+/config/application.yml
