@@ -96,6 +96,7 @@ EMAILS
 - Se envian las credenciales de MANDRILL a HEROKU
   => figaro heroku:set -e production
   => heroku config:set hostname=http://producthunt-c.herokuapp.com
+  => En heroku.com seleccinar App y agregar un add-ons heroku scheduler y una nueva tarea rake email:daily_products
 
 
 
